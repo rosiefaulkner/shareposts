@@ -6,7 +6,7 @@
     
     public function index(){
       $data = [
-        'title' => 'FaulknerMVC'
+        'title' => 'SharePosts'
       ];
 
       

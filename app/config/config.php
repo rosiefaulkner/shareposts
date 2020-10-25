@@ -2,12 +2,12 @@
   // DB Params
   define('DB_HOST', 'localhost');
   define('DB_USER', 'rosie');
-  define('DB_PASS', 'root');
-  define('DB_NAME', 'tmvc');
+  define('DB_PASS', '123456');
+  define('DB_NAME', 'shareposts');
 
   // App Root
   define('APPROOT', dirname(dirname(__FILE__)));
   // URL Root
-  define('URLROOT', 'http://localhost/faulknermvc');
+  define('URLROOT', 'http://localhost/shareposts');
   // Site Name
-  define('SITENAME', 'FaulknerMVC');
+  define('SITENAME', 'SharePosts');
