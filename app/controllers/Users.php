@@ -132,6 +132,7 @@
 
           if($loggedInUser){
             // Create session
+            $this->createUserSession($loggedInUser);
           } else {
             $data['password_err'] = 'Password incorrect';
 
@@ -155,5 +156,12 @@
         // Load view
         $this->view('users/login', $data);
       }
+    }
+
+    public function createUserSession($user){
+      $_SESSION['user_id'] = $user->id;
+      $_SESSION['user_email'] = $user->email;
+      $_SESSION['user_name'] = $user->name;
+      redirect('pages/index');
     }
   }
